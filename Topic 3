@@ -1,0 +1,44 @@
+//first part
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        
+        int a = 1;
+        int b = 2;
+        int c = 3;
+        
+        var valor = suma(a,b,c);
+        
+        System.out.println(valor);
+    }
+    
+    public static int suma(int a, int b, int c){
+        return a + b + c;
+    }
+}
+
+
+//second part
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        
+        coche miCoche = new coche(4);
+        
+        int aumentarPuertas = miCoche.aumentarPuertas();
+        
+        System.out.println(aumentarPuertas);
+    }
+    
+    public static class coche{
+        int puertas;
+        
+        public coche(int puertas){
+            this.puertas = puertas;
+        }
+        
+        int aumentarPuertas(){
+            return puertas+1;
+        }
+    }
+}
